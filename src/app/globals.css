@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "../design-system/foundations/tokens.css";
+
+@theme {
+  /* Reset tailwind default colors */
+  --color-*: initial;
+  /** Semantic UI roles */
+  --color-surface-default: var(--neutral-0);
+  --color-surface-canvas: var(--neutral-25);
+  --color-surface-control: var(--neutral-50b);
+  --color-surface-subtle: var(--neutral-50);
+
+  --color-text-primary: var(--neutral-800);
+  --color-text-secondary: var(--neutral-600);
+  --color-text-inverse: var(--neutral-0);
+  --color-text-disabled: var(--neutral-400);
+
+  --color-border-default: var(--neutral-200);
+  --color-border-subtle: var(--neutral-100);
+
+  --color-focus-ring: var(--indigo-500);
+  --color-overlay-scrim: var(--neutral-800);
+
+  /** Action roles */
+  --color-action-primary-default: var(--magenta-500);
+  --color-action-primary-hover: var(--magenta-300);
+  --color-action-primary-pressed: var(--magenta-700);
+
+  --color-action-context-default: var(--indigo-500);
+  --color-action-context-hover: var(--indigo-300);
+  --color-action-context-pressed: var(--indigo-700);
+
+  --color-action-neutral-default: var(--neutral-800);
+  --color-action-neutral-hover: var(--neutral-500);
+  --color-action-neutral-pressed: var(--neutral-850);
+
+  --color-action-danger-default: var(--red-500);
+  --color-action-danger-hover: var(--red-600);
+  --color-action-danger-pressed: var(--red-700);
+}
