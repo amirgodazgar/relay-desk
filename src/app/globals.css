@@ -2,13 +2,14 @@
 @import "../design-system/foundations/tokens.css";
 
 @theme {
-  /* Reset tailwind default colors */
-  --color-*: initial;
+  /* Reset tailwind variables */
+  --*: initial;
+
   /** Semantic UI roles */
   --color-surface-default: var(--neutral-0);
   --color-surface-canvas: var(--neutral-25);
   --color-surface-control: var(--neutral-50b);
-  --color-surface-subtle: var(--neutral-50);
+  --color-surface-subtle: var(--neutral-50a);
 
   --color-text-primary: var(--neutral-800);
   --color-text-secondary: var(--neutral-600);
@@ -37,4 +38,83 @@
   --color-action-danger-default: var(--red-500);
   --color-action-danger-hover: var(--red-600);
   --color-action-danger-pressed: var(--red-700);
+
+  /** --------------------------------------------- */
+
+  --spacing-0: var(--spacing-0);
+  --spacing-1: var(--spacing-4);
+  --spacing-2: var(--spacing-8);
+  --spacing-3: var(--spacing-12);
+  --spacing-4: var(--spacing-16);
+  --spacing-5: var(--spacing-20);
+  --spacing-6: var(--spacing-24);
+  --spacing-7: var(--spacing-32);
+  --spacing-8: var(--spacing-40);
+  --spacing-9: var(--spacing-48);
+  --spacing-10: var(--spacing-64);
+
+  --rounded-none: var(--radius-0);
+  --rounded-sm: var(--radius-5);
+  --rounded-md: var(--radius-8);
+  --rounded-lg: var(--radius-10);
+  --rounded-xl: var(--radius-14);
+  --rounded-full: var(--radius-full);
+
+  --text-display: var(--font-size-32);
+  --text-heading-page: var(--font-size-24);
+  --text-heading-section: var(--font-size-20);
+  --text-heading-subsection: var(--font-size-18);
+  --text-title-item: var(--font-size-16);
+  --text-body-large: var(--font-size-16);
+  --text-body-default: var(--font-size-14);
+  --text-body-small: var(--font-size-13);
+  --text-label-default: var(--font-size-13);
+  --text-label-small: var(--font-size-12);
+  --text-caption: var(--font-size-11);
+  --text-overline: var(--font-size-11);
+
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+
+  --leading-display: var(--line-height-44);
+  --leading-heading-page: var(--line-height-34);
+  --leading-heading-section: var(--line-height-29);
+  --leading-heading-subsection: var(--line-height-26);
+  --leading-title-item: var(--line-height-23);
+  --leading-body-large: var(--line-height-24);
+  --leading-body-default: var(--font-height-21);
+  --leading-body-small: var(--line-height-19);
+  --leading-label-default: var(--line-height-19);
+  --leading-label-small: var(--line-height-18);
+  --leading-caption: var(--line-height-16);
+  --leading-overline: var(--line-height-16);
+
+  --shadow-none: var(--shadow-none);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --overlay: var(--overlay);
+
+  --icon-sm: var(--icon-16);
+  --icon-md: var(--icon-20);
+  --icon-lg: var(--icon-24);
+
+  --avatar-sm: var(--avatar-32);
+  --avatar-md: var(--avatar-40);
+  --avatar-lg: var(--avatar-48);
+
+  --duration-base: var(--duration-220);
+  --duration-slow: var(--duration-320);
+  --duration-fast: var(--duration-160);
+  --duration-instant: var(--duration-100);
+  --easing-standard: var(--easing-standard);
+
+  --z-base: var(--z-index-base);
+  --z-sticky: var(--z-index-10);
+  --z-dropdown: var(--z-index-20);
+  --z-overlay: var(--z-index-30);
+  --z-modal: var(--z-index-40);
+  --z-toast: var(--z-index-50);
 }
