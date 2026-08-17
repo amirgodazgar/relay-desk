@@ -3,13 +3,13 @@
 
 @theme {
   /* Reset tailwind variables */
-  --*: initial;
+  /* --*: initial; */
 
   /** Semantic UI roles */
   --color-surface-default: var(--neutral-0);
   --color-surface-canvas: var(--neutral-25);
-  --color-surface-control: var(--neutral-50b);
-  --color-surface-subtle: var(--neutral-50a);
+  --color-surface-control: var(--neutral-50);
+  --color-surface-subtle: var(--neutral-75);
 
   --color-text-primary: var(--neutral-800);
   --color-text-secondary: var(--neutral-600);
@@ -20,7 +20,7 @@
   --color-border-subtle: var(--neutral-100);
 
   --color-focus-ring: var(--indigo-500);
-  --color-overlay-scrim: var(--neutral-800);
+  --color-overlay: var(--neutral-800);
 
   /** Action roles */
   --color-action-primary-default: var(--magenta-500);
@@ -42,23 +42,23 @@
   /** --------------------------------------------- */
 
   --spacing-0: var(--spacing-0);
-  --spacing-1: var(--spacing-4);
-  --spacing-2: var(--spacing-8);
-  --spacing-3: var(--spacing-12);
-  --spacing-4: var(--spacing-16);
-  --spacing-5: var(--spacing-20);
-  --spacing-6: var(--spacing-24);
-  --spacing-7: var(--spacing-32);
-  --spacing-8: var(--spacing-40);
-  --spacing-9: var(--spacing-48);
-  --spacing-10: var(--spacing-64);
+  --spacing-1: var(--spacing-1);
+  --spacing-2: var(--spacing-2);
+  --spacing-3: var(--spacing-3);
+  --spacing-4: var(--spacing-4);
+  --spacing-5: var(--spacing-5);
+  --spacing-6: var(--spacing-6);
+  --spacing-7: var(--spacing-7);
+  --spacing-8: var(--spacing-8);
+  --spacing-9: var(--spacing-9);
+  --spacing-10: var(--spacing-10);
 
-  --rounded-none: var(--radius-0);
-  --rounded-sm: var(--radius-5);
-  --rounded-md: var(--radius-8);
-  --rounded-lg: var(--radius-10);
-  --rounded-xl: var(--radius-14);
-  --rounded-full: var(--radius-full);
+  --rounded-none: 0;
+  --rounded-sm: 5px;
+  --rounded-md: 8px;
+  --rounded-lg: 10px;
+  --rounded-xl: 14px;
+  --rounded-full: 999px;
 
   --text-display: var(--font-size-32);
   --text-heading-page: var(--font-size-24);
@@ -73,10 +73,10 @@
   --text-caption: var(--font-size-11);
   --text-overline: var(--font-size-11);
 
-  --font-weight-normal: var(--font-weight-normal);
-  --font-weight-medium: var(--font-weight-medium);
-  --font-weight-semibold: var(--font-weight-semibold);
-  --font-weight-bold: var(--font-weight-bold);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
   --leading-display: var(--line-height-44);
   --leading-heading-page: var(--line-height-34);
@@ -91,30 +91,32 @@
   --leading-caption: var(--line-height-16);
   --leading-overline: var(--line-height-16);
 
-  --shadow-none: var(--shadow-none);
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --overlay: var(--overlay);
+  --border-default: 1px;
+  --border-focus: 2px;
 
-  --icon-sm: var(--icon-16);
-  --icon-md: var(--icon-20);
-  --icon-lg: var(--icon-24);
+  --shadow-none: none;
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
-  --avatar-sm: var(--avatar-32);
-  --avatar-md: var(--avatar-40);
-  --avatar-lg: var(--avatar-48);
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --avatar-sm: 32px;
+  --avatar-md: 40px;
+  --avatar-lg: 48px;
 
-  --duration-base: var(--duration-220);
-  --duration-slow: var(--duration-320);
-  --duration-fast: var(--duration-160);
-  --duration-instant: var(--duration-100);
-  --easing-standard: var(--easing-standard);
+  --duration-base: 220ms;
+  --duration-slow: 320ms;
+  --duration-fast: 160ms;
+  --duration-instant: 100ms;
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
 
-  --z-base: var(--z-index-base);
-  --z-sticky: var(--z-index-10);
-  --z-dropdown: var(--z-index-20);
-  --z-overlay: var(--z-index-30);
-  --z-modal: var(--z-index-40);
-  --z-toast: var(--z-index-50);
+  --z-base: 0;
+  --z-sticky: 10;
+  --z-dropdown: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+  --z-toast: 50;
 }
