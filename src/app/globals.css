@@ -38,17 +38,17 @@
   /** --------------------------------------------- */
 
   --spacing-*: initial;
-  --spacing-0: var(--spacing-0);
-  --spacing-1: var(--spacing-1);
-  --spacing-2: var(--spacing-2);
-  --spacing-3: var(--spacing-3);
-  --spacing-4: var(--spacing-4);
-  --spacing-5: var(--spacing-5);
-  --spacing-6: var(--spacing-6);
-  --spacing-7: var(--spacing-7);
-  --spacing-8: var(--spacing-8);
-  --spacing-9: var(--spacing-9);
-  --spacing-10: var(--spacing-10);
+  --spacing-0: var(--space-0);
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-7: var(--space-7);
+  --spacing-8: var(--space-8);
+  --spacing-9: var(--space-9);
+  --spacing-10: var(--space-10);
   --spacing-icon-sm: 16px;
   --spacing-icon-md: 20px;
   --spacing-icon-lg: 24px;
@@ -85,27 +85,12 @@
   --leading-heading-subsection: var(--line-height-26);
   --leading-title-item: var(--line-height-23);
   --leading-body-large: var(--line-height-24);
-  --leading-body-default: var(--font-height-21);
+  --leading-body-default: var(--line-height-21);
   --leading-body-small: var(--line-height-19);
   --leading-label-default: var(--line-height-19);
   --leading-label-small: var(--line-height-18);
   --leading-caption: var(--line-height-16);
   --leading-overline: var(--line-height-16);
-
-  --shadow-*: initial;
-  --shadow-none: none;
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg:
-    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-
-  --duration-*: initial;
-  --easing-*: initial;
-  --duration-base: 220ms;
-  --duration-slow: 320ms;
-  --duration-fast: 160ms;
-  --duration-instant: 100ms;
-  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
 
   --z-*: initial;
   --z-base: 0;
@@ -114,14 +99,4 @@
   --z-overlay: 30;
   --z-modal: 40;
   --z-toast: 50;
-
-  --border-default: 1px;
-  --border-focus: 2px;
-}
-
-@utility border-default {
-  border: var(--border-default);
-}
-@utility border-focus {
-  border: var(--border-focus);
 }
