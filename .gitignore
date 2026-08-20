@@ -59,3 +59,4 @@ next-env.d.ts
 .prettierignore
 *storybook.log
 storybook-static
+/_knowledge
